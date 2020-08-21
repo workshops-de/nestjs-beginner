@@ -6,7 +6,7 @@ FROM gitpod/workspace-postgres
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN brew install libpq
-RUN brew link --force libpq ail
+# RUN brew install libpq
+# RUN brew link --force libpq ail
 
 RUN npm i -g @nestjs/cli
