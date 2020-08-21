@@ -6,5 +6,5 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init: 'npm i -g @nestjs/cli && cd bookmonkey-rest-api && npm install'
-    command: 'cd bookmonkey-rest-api && npm run start'
+  - init: "npm i -g @nestjs/cli && cd bookmonkey-rest-api && npm install"
+    command: "cd bookmonkey-rest-api && npm run start"
