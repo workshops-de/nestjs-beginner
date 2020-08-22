@@ -6,5 +6,5 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init: "npm install && echo '\x \\ CREATE DATABASE workshop;' | psql && psql -U gitpod workshop < dump.sql"
-    command: "cd bookmonkey-rest-api && npm run start"
+  - init: npm install && echo '\x \\ CREATE DATABASE workshop;' | psql && psql -U gitpod workshop < dump.sql
+    command: cd bookmonkey-rest-api && npm run start
