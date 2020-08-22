@@ -19,6 +19,10 @@ export class BooksService {
         return this.booksRepository.findOne(id);
     }
 
+    create(book: Book): Book {
+        return this.booksRepository.create(book);
+    }
+
     async remove(id: string): Promise<void> {
         await this.booksRepository.delete(id);
     }
