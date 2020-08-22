@@ -6,6 +6,6 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - before: cd database && chmod +x setup.sh && ./setup.sh
+  - before: cd database && cat dump.sql | mysql
     init: cd bookmonkey-rest-api && npm install
     command: cd bookmonkey-rest-api && npm run start
