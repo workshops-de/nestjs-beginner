@@ -1,4 +1,4 @@
-FROM gitpod/workspace-postgres
+FROM gitpod/workspace-mysql
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
@@ -6,7 +6,7 @@ FROM gitpod/workspace-postgres
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN brew install libpq
-RUN brew link --force libpq
+# RUN brew install libpq postgres
+# RUN brew link --force libpq
 
 RUN npm i -g @nestjs/cli
