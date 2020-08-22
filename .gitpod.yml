@@ -6,5 +6,6 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init: cd bookmonkey-rest-api && npm install
+  - before: cd database && chmod +x setup.sh && ./setup.sh
+    init: cd bookmonkey-rest-api && npm install
     command: cd bookmonkey-rest-api && npm run start
