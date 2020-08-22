@@ -2,8 +2,6 @@
 -- PostgreSQL database dump
 --
 
-CREATE DATABSE 'workshops-de'
-
 -- Dumped from database version 11.5
 -- Dumped by pg_dump version 11.5
 
